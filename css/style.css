@@ -626,9 +626,41 @@ a.btn {
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .main__bottom {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px 120px;
   }
+}
+
+@media screen and (-ms-high-contrast: active) and (max-width: 1720px), screen and (-ms-high-contrast: none) and (max-width: 1720px) {
+  .main__bottom {
+    padding: 15 100px;
+  }
+}
+
+@media screen and (-ms-high-contrast: active) and (max-width: 1560px), screen and (-ms-high-contrast: none) and (max-width: 1560px) {
+  .main__bottom {
+    padding: 15 80px;
+  }
+}
+
+@media screen and (-ms-high-contrast: active) and (max-width: 1480px), screen and (-ms-high-contrast: none) and (max-width: 1480px) {
+  .main__bottom {
+    padding: 15 60px;
+  }
+}
+
+@media screen and (-ms-high-contrast: active) and (max-width: 1366px), screen and (-ms-high-contrast: none) and (max-width: 1366px) {
+  .main__bottom {
+    padding: 15 45px;
+  }
+}
+
+@media screen and (-ms-high-contrast: active) and (max-width: 1280px), screen and (-ms-high-contrast: none) and (max-width: 1280px) {
+  .main__bottom {
+    padding: 15px 25px;
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .main__bottom:before, .main__bottom:after {
     content: '';
     min-height: 35px;
