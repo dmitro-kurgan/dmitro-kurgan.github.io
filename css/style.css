@@ -625,6 +625,10 @@ a.btn {
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .main__bottom {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
   .main__bottom:before, .main__bottom:after {
     content: '';
     min-height: 35px;
