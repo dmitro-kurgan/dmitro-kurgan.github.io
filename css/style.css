@@ -96,7 +96,7 @@ body {
   font-family: "Open Sans", Arial, sans-serif;
   color: #fff;
   font-weight: 400;
-  min-width: 360px;
+  min-width: 320px;
 }
 
 * {
@@ -795,6 +795,12 @@ a.btn {
   .field {
     padding-left: 45px;
     padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .field {
+    padding-left: 25px;
   }
 }
 
