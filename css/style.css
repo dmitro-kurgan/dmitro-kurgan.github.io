@@ -632,25 +632,25 @@ a.btn {
 
 @media screen and (-ms-high-contrast: active) and (max-width: 1720px), screen and (-ms-high-contrast: none) and (max-width: 1720px) {
   .main__bottom {
-    padding: 15 100px;
+    padding: 15px 100px;
   }
 }
 
 @media screen and (-ms-high-contrast: active) and (max-width: 1560px), screen and (-ms-high-contrast: none) and (max-width: 1560px) {
   .main__bottom {
-    padding: 15 80px;
+    padding: 15px 80px;
   }
 }
 
 @media screen and (-ms-high-contrast: active) and (max-width: 1480px), screen and (-ms-high-contrast: none) and (max-width: 1480px) {
   .main__bottom {
-    padding: 15 60px;
+    padding: 15px 60px;
   }
 }
 
 @media screen and (-ms-high-contrast: active) and (max-width: 1366px), screen and (-ms-high-contrast: none) and (max-width: 1366px) {
   .main__bottom {
-    padding: 15 45px;
+    padding: 15px 45px;
   }
 }
 
