@@ -129,7 +129,6 @@ input, textarea, select, button {
     .btn {
       border-radius: 15px;
       height: 48px;
-      line-height: 48px;
       font-size: 16px;
       letter-spacing: 0.8px; } }
   .btn:hover {
@@ -672,7 +671,6 @@ a.btn {
     @media screen and (max-width: 768px) {
       .form__control {
         height: 46px;
-        line-height: 46px;
         padding-left: 10px;
         font-size: 10px;
         letter-spacing: 0.25px; } }
@@ -776,8 +774,7 @@ a.btn {
         width: 126px;
         font-size: 14px;
         letter-spacing: 0.35px;
-        height: 46px;
-        line-height: 46px; } }
+        height: 46px; } }
     .form__radio + .form__radio {
       margin-left: 9px; }
       @media screen and (max-width: 768px) {
