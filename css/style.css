@@ -580,13 +580,6 @@ a.btn {
   background-color: rgba(255, 255, 255, 0.74);
 }
 
-.main__bottom:before, .main__bottom:after {
-  content: '';
-  min-height: 35px;
-  font-size: 0;
-  position: absolute;
-}
-
 @media screen and (max-width: 1720px) {
   .main__bottom {
     padding: 0 100px;
@@ -627,6 +620,20 @@ a.btn {
 
 @media screen and (max-width: 992px) {
   .main__bottom {
+    display: none;
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .main__bottom:before, .main__bottom:after {
+    content: '';
+    min-height: 35px;
+    font-size: 0;
+  }
+}
+
+@media screen and (-ms-high-contrast: active) and (max-width: 1024px), screen and (-ms-high-contrast: none) and (max-width: 1024px) {
+  .main__bottom:before, .main__bottom:after {
     display: none;
   }
 }
