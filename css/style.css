@@ -883,9 +883,9 @@ a.btn {
 .field__heart span {
   display: inline-block;
   position: relative;
-  height: 24px;
+  height: 22px;
   transform: rotate(-45deg);
-  width: 24px;
+  width: 22px;
   border-radius: 5px;
 }
 
@@ -903,8 +903,8 @@ a.btn {
   display: block;
   position: absolute;
   border-radius: 50%;
-  height: 24px;
-  width: 24px;
+  height: 22px;
+  width: 22px;
 }
 
 @media screen and (max-width: 992px) {
@@ -916,7 +916,7 @@ a.btn {
 
 .field__heart span:before {
   left: 0;
-  top: -12px;
+  top: -11px;
 }
 
 @media screen and (max-width: 992px) {
@@ -926,7 +926,7 @@ a.btn {
 }
 
 .field__heart span:after {
-  left: 12px;
+  left: 11px;
 }
 
 @media screen and (max-width: 992px) {
