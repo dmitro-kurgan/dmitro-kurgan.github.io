@@ -441,10 +441,12 @@ body {
   width: 100%;
   height: 100%;
   background-size: cover;
-  background-blend-mode: darken;
   opacity: 0;
+  background-blend-mode: darken;
   -webkit-transition: background 1s, opacity 1s;
   transition: background 1s, opacity 1s;
+  -webkit-animation: fadeIn 1s 1.5s forwards;
+          animation: fadeIn 1s 1.5s forwards;
 }
 
 .btn {
@@ -585,10 +587,6 @@ body {
   from {
     -webkit-transform: perspective(1000px) rotate3d(1, 0, 0, -90deg) translate3d(0, 0, -90px);
             transform: perspective(1000px) rotate3d(1, 0, 0, -90deg) translate3d(0, 0, -90px);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
   }
   to {
     -webkit-transform: perspective(1000px);
@@ -600,10 +598,6 @@ body {
   from {
     -webkit-transform: perspective(1000px) rotate3d(1, 0, 0, -90deg) translate3d(0, 0, -90px);
             transform: perspective(1000px) rotate3d(1, 0, 0, -90deg) translate3d(0, 0, -90px);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
   }
   to {
     -webkit-transform: perspective(1000px);
@@ -614,10 +608,6 @@ body {
   from {
     -webkit-transform: perspective(200px) rotate3d(1, 0, 0, 60deg) translate3d(0, 0, 27px);
             transform: perspective(200px) rotate3d(1, 0, 0, 60deg) translate3d(0, 0, 27px);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
   }
   to {
     -webkit-transform: perspective(200px);
@@ -628,10 +618,6 @@ body {
   from {
     -webkit-transform: perspective(200px) rotate3d(1, 0, 0, 60deg) translate3d(0, 0, 27px);
             transform: perspective(200px) rotate3d(1, 0, 0, 60deg) translate3d(0, 0, 27px);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
   }
   to {
     -webkit-transform: perspective(200px);
@@ -766,6 +752,22 @@ body {
     background-color: rgba(255, 255, 255, 0.7);
   }
 }
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .form {
   position: relative;
   z-index: 1;
@@ -782,8 +784,8 @@ body {
           backface-visibility: visible;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  -webkit-animation: flipInForm 1s cubic-bezier(0.1, 0.41, 0.33, 1.23) forwards, changeFormBgColor 1s 1.5s forwards;
-          animation: flipInForm 1s cubic-bezier(0.1, 0.41, 0.33, 1.23) forwards, changeFormBgColor 1s 1.5s forwards;
+  -webkit-animation: flipInForm 1s cubic-bezier(0.1, 0.41, 0.33, 1.23) forwards, fadeIn 0.5s forwards, changeFormBgColor 1s 1.5s forwards;
+          animation: flipInForm 1s cubic-bezier(0.1, 0.41, 0.33, 1.23) forwards, fadeIn 0.5s forwards, changeFormBgColor 1s 1.5s forwards;
 }
 .form__title, .form__subtitle {
   text-align: center;
@@ -821,8 +823,8 @@ body {
           box-shadow: rgba(0, 0, 0, 0.07) 0 6px 24px;
   -webkit-backface-visibility: visible;
           backface-visibility: visible;
-  -webkit-animation: flipInLogo cubic-bezier(0.43, 0.5, 0.81, 0.87) 1s forwards;
-          animation: flipInLogo cubic-bezier(0.43, 0.5, 0.81, 0.87) 1s forwards;
+  -webkit-animation: flipInLogo cubic-bezier(0.43, 0.5, 0.81, 0.87) 1s forwards, fadeIn 0.5s forwards;
+          animation: flipInLogo cubic-bezier(0.43, 0.5, 0.81, 0.87) 1s forwards, fadeIn 0.5s forwards;
 }
 .logo__bg::before {
   position: absolute;

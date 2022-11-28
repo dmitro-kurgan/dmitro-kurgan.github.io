@@ -5,7 +5,6 @@ var src = './images/';
 var block = document.getElementById('bgImage');
 var handler = setInterval(carousel, 10000);
 var countEnd = 6;
-var startDelay = 1500;
 var count = 0;
 var imageIndex;
 images.forEach(function (img) {
@@ -19,9 +18,6 @@ function carousel() {
   if (++count === countEnd) clearInterval(handler);
   localStorage.setItem('image', imageIndex);
   if (block) {
-    setTimeout(function () {
-      block.style.opacity = '1';
-    }, startDelay);
     block.style.background = "url(\"".concat(src).concat(images[imageIndex], "\") no-repeat center center fixed");
     block.style.backgroundSize = 'cover';
   }
